@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Car</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    background:white;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+overflow: hidden;
+
+position: absolute;}
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 15px;
+    color: black;
+    animation: header 1s ease-in-out;
+}
+@keyframes header{
+    0%{
+        transform: translateX(-100%);
+    }
+}
+nav li{
+    display: inline-block;
+    margin: 10px 10px;
+    font-weight: 550;
+}
+.main{
+    width: 100%;
+    display: flex;   
+}
+.content{
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 5%;
+    color: #000;
+    overflow: hidden;
+    animation: content 2s ease-in-out;
+}
+@keyframes content{
+    0%{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+} 
+.content h1{
+font-size: 70px;
+margin-bottom: 1%;
+letter-spacing: 7px;
+}
+.content h3{
+    font-size: 25px;
+    margin-bottom: 3%;
+    font-family: 'Times New Roman', Times, serif;
+}
+span{
+    color:rgb(235, 58, 14);
+}
+.content p{
+    font-size: 20px;
+    margin-bottom: 3%;
+    font-family: 'Times New Roman', Times, serif ;
+    }
+    button{
+        padding: 15px 30px;
+        background: transparent;
+        color: #000;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    button:hover{
+        background-color: red;
+    }
+    .image{
+        width: 50%;
+        margin-top: 8%;
+        
+
+    }
+    img{
+        width: 40rem;
+    animation: car 5s ease-in infinite;
+    
+
+    }
+    @keyframes car {
+        0%{
+            transform: translatex(100%);
+        }
+        100%{
+            transform: translatex(-215%);
+        }
+    }
+    @media screen and (max-width:1200px){
+        .content{
+            width: 100%;
+            text-align: center;
+        }
+        .image{
+            width: 100%;
+            bottom: -5%;
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            width: 20rem; 
+        }
+    }
+    @media screen and (max-width:576px){
+        .content{
+            width: 100%;
+            text-align: center;
+        }
+        .content h1,h3,p{
+            margin-bottom: 5%;
+        }
+    
+        .image{
+            width: 100%;
+            position: absolute;
+            bottom: -5%;
+            display: flex;
+            justify-content: center;
+            background: transparent;
+        }
+        img{
+    
+            width: 30rem; 
+        }
+    }
+</style>
+<body>
+<header>
+    
+    <nav>
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>CONTACT</li>
+
+    </nav>
+</header>
+<div class="main">
+    <div class="content">
+        <h1><span>CAR </span></h1>
+        <h3> Kamalesh</h3>
+        <p>This is my new animation at Car</p>
+        <button >GET STARTED</button>
+        <button >START DRIVE</button>
+
+    </div>
+    <div class="image">
+        <img src="https://cdn.dribbble.com/users/1746237/screenshots/11273605/media/45251187ae80109cc4f20762a433e4c5.gif">
+    </div>
+    </div>   
+</body>
+</html>
